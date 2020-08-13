@@ -21,7 +21,7 @@ public class Conexao {
     private static final String SENHA = "123456789";
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     
-    public static Connection IniciarConexao() {
+    public static  Connection IniciarConexao() {
         try {
             Class.forName(DRIVER);
             return DriverManager.getConnection(URL, USUARIO, SENHA);
