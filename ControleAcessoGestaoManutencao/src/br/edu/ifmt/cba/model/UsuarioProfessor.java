@@ -1,7 +1,7 @@
 package br.edu.ifmt.cba.model;
 
 /**
- *
+ * 
  * @author Eduardo Gonçalves da Silva
  */
 public class UsuarioProfessor extends UsuarioLaboratorio{
@@ -9,15 +9,14 @@ public class UsuarioProfessor extends UsuarioLaboratorio{
     private String departamento;
     private String disciplina;
 
-    public UsuarioProfessor(String departamento, String disciplina, String nome, String identificador) {
-        this.departamento = departamento;
-        this.disciplina = disciplina;        
-    }
-
     public UsuarioProfessor() {
-    
     }
-
+    
+    public UsuarioProfessor(String departamento, String disciplina, String nome, int identificador) {
+        super(nome,identificador);
+        this.departamento = departamento;
+        this.disciplina = disciplina;
+    }
     
     public String getDepartamento() {
         return departamento;
@@ -34,6 +33,4 @@ public class UsuarioProfessor extends UsuarioLaboratorio{
     public void setDisciplina(String disciplina) {
         this.disciplina = disciplina;
     }
-    
-    
 }
