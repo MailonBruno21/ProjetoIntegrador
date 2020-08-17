@@ -11,17 +11,17 @@ import java.sql.PreparedStatement;
  * @author Mailon Bruno
  */
 public class TesteBancoDAO {
-    
+
     public static void main(String[] args) {
-        
+
         Connection con = Conexao.IniciarConexao();
         PreparedStatement stmt = null;
-        
-        try {}
-         
-        finally {
+
+        try {
+
+        } finally {
             Conexao.FecharConexao(con, stmt);
         }
-        
+
     }
 }
